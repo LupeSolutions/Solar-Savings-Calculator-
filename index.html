@@ -1,96 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar Savings Tracker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background: #ffcc00;
-            padding: 1.5rem;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        header p {
-            margin-top: 0.5rem;
-        }
-        main {
-            max-width: 1000px;
-            margin: auto;
-            padding: 1rem;
-        }
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-        }
-        section {
-            margin-top: 2rem;
-            background: #fff;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        h2 {
-            margin-top: 0;
-            color: #444;
-        }
-        .affiliate-links a {
-            display: inline-block;
-            margin: 0.5rem;
-            padding: 0.75rem 1rem;
-            background: #0077cc;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .affiliate-links a:hover {
-            background: #005fa3;
-        }
-        footer {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #777;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO -->
+  <title>Your Eco Calculator – Track Actual Savings</title>
+  <meta name="description" content="Use our live calculator to track your actual electricity savings and monitor your installation ROI.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/eco-favicon.png" type="image/png">
+
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:title" content="Your Eco Calculator – Track Actual Savings">
+  <meta property="og:description" content="Use our live calculator to track your actual electricity savings and monitor your installation ROI.">
+  <meta property="og:image" content="images/eco-banner.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your Eco Calculator – Track Actual Savings">
+  <meta name="twitter:description" content="Use our live calculator to track your actual electricity savings and monitor your installation ROI.">
+  <meta name="twitter:image" content="images/eco-banner.png">
+
+  <!-- GA4 Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-501366392"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-501366392');
+  </script>
+
+  <!-- Styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0faf0;
+      color: #2a4d2a;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      color: #1b3c1b;
+    }
+    p {
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .cta-buttons a {
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .coffee {
+      background-color: #ff7f50;
+    }
+    .affiliate {
+      background-color: #1e90ff;
+    }
+    iframe {
+      display: block;
+      margin: 0 auto;
+      border: none;
+      width: 90%;
+      height: 600px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Solar Savings Tracker</h1>
-        <p>See how much your solar panels are saving you each month.</p>
-    </header>
-    <main>
-        <section>
-            <h2>Your Tracker</h2>
-            <iframe src=https://docs.google.com/spreadsheets/d/1idmOYTSyRRRdsSPnif7sEIv7kC_HNDVwBKktaZqK6tI/preview
-></iframe>
-        </section>
+  <header>
+    <h1>Track Your Actual Electricity Savings</h1>
+    <p>Use our live calculator to record the real savings on your electricity bills and see how much of your installation costs you’ve recovered — all in one easy tool.</p>
+  </header>
 
-        <section>
-            <h2>Save Even More on Solar</h2>
-            <p>Thinking about upgrading your system, adding a battery, or switching tariffs? Check these offers:</p>
-            <div class="affiliate-links">
-                <a href="YOUR-AFFILIATE-LINK-1" target="_blank">Get a Free Solar Quote</a>
-                <a href="YOUR-AFFILIATE-LINK-2" target="_blank">Best Battery Storage Deals</a>
-                <a href="YOUR-AFFILIATE-LINK-3" target="_blank">Switch to a Cheaper Tariff</a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        &copy; 2025 Solar Savings Tracker. All rights reserved.
-    </footer>
+  <!-- Embedded Google Sheet -->
+  <iframe src="https://docs.google.com/spreadsheets/d/1idmOYTSyRRRdsSPnif7sEIv7kC_HNDVwBKktaZqK6tI/preview"
+></iframe>
+
+  <!-- CTAs -->
+  <div class="cta-buttons">
+    <a href="https://buymeacoffee.com/LupeSolutions" class="coffee" target="_blank" onclick="gtag('event', 'click', {'event_category':'CTA','event_label':'Buy Me a Coffee'});">Buy Me a Coffee</a>
+    <a href="https://www.blueaperenewables.co.uk" class="affiliate" target="_blank" onclick="gtag('event', 'click', {'event_category':'CTA','event_label':'Blue Ape Renewables Affiliate'});">Blue Ape Renewables</a>
+  </div>
 </body>
 </html>
